@@ -5,12 +5,12 @@ import '@/styles/tailwind.css'
 
 export const metadata = {
   title: {
-    template: '%s - Spencer Sharp',
+    template: '%s - Bhavishya',
     default:
-      'Spencer Sharp - Software designer, founder, and amateur astronaut',
+      'Bhavishya - Frontend Developer',
   },
   description:
-    'I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.',
+    'I’m Experienced Frontend Developer with a strong background in the manufacturing industry, specializing in building and maintaining scalable, high-performance web applications. Experienced in developing internal support portals and client-facing web application tailored to the needs of multiple stakeholders. Skilled in JavaScript, React, Angular, Tailwind CSS, and Apollo GraphQL, with a focus on usability, clean architecture, and cross-functional collaboration.',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
