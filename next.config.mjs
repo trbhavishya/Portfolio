@@ -5,8 +5,8 @@ import remarkGfm from 'remark-gfm'
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/portfolio',
-  assetPrefix: '/portfolio/',
+  basePath: '/Portfolio',
+  assetPrefix: '/Portfolio/',
   images: {
     unoptimized: true,
   },
