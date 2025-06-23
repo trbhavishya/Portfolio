@@ -13,7 +13,8 @@ export const metadata = {
     'I’m Experienced Frontend Developer with a strong background in the manufacturing industry, specializing in building and maintaining scalable, high-performance web applications. Experienced in developing internal support portals and client-facing web application tailored to the needs of multiple stakeholders. Skilled in JavaScript, React, Angular, Tailwind CSS, and Apollo GraphQL, with a focus on usability, clean architecture, and cross-functional collaboration.',
   alternates: {
     types: {
-      'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
+      'application/rss+xml': `https://trbhavishya.github.io/Portfolio/feed.xml`,
+      // 'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
     },
   },
 }
