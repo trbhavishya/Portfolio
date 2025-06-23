@@ -11,10 +11,10 @@ import {
   LinkedInIcon,
   XIcon,
 } from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+import logoIbm from '@/images/logos/ibm.svg'
+import logoCgi from '@/images/logos/cgi.svg'
+import logoVentera from '@/images/logos/ventera.svg'
+import logoDxc from '@/images/logos/dxc.svg'
 // import image1 from '@/images/photos/image-1.jpg'
 // import image2 from '@/images/photos/image-2.jpg'
 // import image3 from '@/images/photos/image-3.jpg'
@@ -149,7 +149,7 @@ function Resume() {
     {
       company: 'Ventera Corporation',
       title: 'Frontend Web Developer',
-      logo: logoPlanetaria,
+      logo: logoVentera,
       start: '2024 Sep',
       end: {
         label: 'Present',
@@ -159,21 +159,21 @@ function Resume() {
     {
       company: 'IBM Private Limited',
       title: 'Senior Software Engineer',
-      logo: logoAirbnb,
+      logo: logoIbm,
       start: '2023 Jun',
       end: '2024 Sep',
     },
     {
       company: 'CGI',
       title: 'Senior Software Engineer',
-      logo: logoFacebook,
+      logo: logoCgi,
       start: '2021 Jul',
       end: '2023 Jun',
     },
     {
       company: 'DXC Technology',
       title: 'Software Engineer',
-      logo: logoStarbucks,
+      logo: logoDxc,
       start: '2018 Jan',
       end: '2021 Jul',
     },
