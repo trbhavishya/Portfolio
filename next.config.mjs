@@ -6,9 +6,11 @@ import remarkGfm from 'remark-gfm'
 const nextConfig = {
   output: 'export',
   basePath: '/portfolio',
+  assetPrefix: '/portfolio/',
   images: {
     unoptimized: true,
   },
+  trailingSlash: true,
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
   experimental: {
     outputFileTracingIncludes: {
