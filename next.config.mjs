@@ -6,6 +6,9 @@ import remarkGfm from 'remark-gfm'
 const nextConfig = {
   output: 'export',
   basePath: '/portfolio',
+  images: {
+    unoptimized: true,
+  },
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
   experimental: {
     outputFileTracingIncludes: {
