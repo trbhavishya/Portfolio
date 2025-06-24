@@ -2,48 +2,37 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoVentera from '@/images/logos/ventera.svg'
 
 const projects = [
   {
-    name: 'Internal Support Portal',
+    name: 'Ventera Corporation',
     description:
-      'Worked with claims tracking portal. The portal provides support of patients to track the claims.',
+      'Leading UI modernization efforts by migrating AngularJS apps to React. Developed scalable, modular components and implemented JWT authentication, Jest unit testing, and API integrations with Node.js and Express.',
     link: { href: '', label: '' },
     logo: logoVentera,
   },
-  // {
-  //   name: 'Animaginary',
-  //   description:
-  //     'High performance web animation library, hand-written in optimized WASM.',
-  //   link: { href: '#', label: 'github.com' },
-  //   logo: logoAnimaginary,
-  // },
-  // {
-  //   name: 'HelioStream',
-  //   description:
-  //     'Real-time video streaming library, optimized for interstellar transmission.',
-  //   link: { href: '#', label: 'github.com' },
-  //   logo: logoHelioStream,
-  // },
-  // {
-  //   name: 'cosmOS',
-  //   description:
-  //     'The operating system that powers our Planetaria space shuttles.',
-  //   link: { href: '#', label: 'github.com' },
-  //   logo: logoCosmos,
-  // },
-  // {
-  //   name: 'OpenShuttle',
-  //   description:
-  //     'The schematics for the first rocket I designed that successfully made it to orbit.',
-  //   link: { href: '#', label: 'github.com' },
-  //   logo: logoOpenShuttle,
-  // },
+  {
+    name: 'IBM (Front-End Modernization)',
+    description:
+      'Built reusable Angular 16 components with TypeScript. Integrated AWS Lambda and ECS for CI/CD pipelines. Developed React dashboards using Hooks, Redux, and Context API.',
+    link: { href: '', label: '' },
+    logo: logoVentera,
+  },
+  {
+    name: 'CGI - Scalable Web Apps',
+    description:
+      'Built scalable React web apps and REST APIs with Node/Express. Integrated CouchDB and MySQL. Employed Jest, Enzyme, and React Testing Library to maintain 100% test coverage.',
+    link: { href: '', label: '' },
+    logo: logoVentera,
+  },
+  {
+    name: 'DXC Technology - Angular & Node',
+    description:
+      'Developed Angular components and Node APIs with JWT authentication. Integrated MongoDB using Mongoose and D3.js for advanced data visualizations.',
+    link: { href: '', label: '' },
+    logo: logoVentera,
+  },
 ]
 
 function LinkIcon(props) {
@@ -59,14 +48,14 @@ function LinkIcon(props) {
 
 export const metadata = {
   title: 'Projects',
-  description: 'My Experience',
+  description: 'Projects and roles held during professional experience.',
 }
 
 export default function Projects() {
   return (
     <SimpleLayout
-      title="My Experience"
-      intro="I’ve worked on tons of projects, from building internal support portals to developing client-facing web applications. Here are some of the most notable ones."
+      title="Projects & Roles"
+      intro="Throughout my career, I have contributed to and led the development of large-scale enterprise applications using modern front-end and back-end technologies. Here are some highlights."
     >
       <ul
         role="list"
@@ -74,22 +63,10 @@ export default function Projects() {
       >
         {projects.map((project) => (
           <Card as="li" key={project.name}>
-            {/* <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md ring-1 shadow-zinc-800/5 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-              <Image
-                src={project.logo}
-                alt=""
-                className="h-8 w-8"
-                unoptimized
-              />
-            </div> */}
             <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
               <Card.Link href={project.link.href}>{project.name}</Card.Link>
             </h2>
             <Card.Description>{project.description}</Card.Description>
-            {/* <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
-              <LinkIcon className="h-6 w-6 flex-none" />
-              <span className="ml-2">{project.link.label}</span>
-            </p> */}
           </Card>
         ))}
       </ul>
