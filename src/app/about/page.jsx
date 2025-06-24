@@ -39,7 +39,7 @@ function MailIcon(props) {
 export const metadata = {
   title: 'About',
   description:
-    'I’m Spencer Sharp. I live in New York City, where I design the future.',
+    'I’m Bhavishya, a Senior Web Developer with deep experience in frontend engineering and cross-functional product delivery.',
 }
 
 export default function About() {
@@ -58,21 +58,30 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            I’m Bhavishya. I live in Phoenix, AZ
+            I’m Bhavishya, a Senior Front-End Developer.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              Experienced Frontend Developer with a strong background in the manufacturing industry, specializing in building and maintaining scalable, high-performance web applications. Experienced in developing internal support portals and client-facing web application tailored to the needs of multiple stakeholders. Skilled in JavaScript, React, Angular, Tailwind CSS, and Apollo GraphQL, with a focus on usability, clean architecture, and cross-functional collaboration.
+              I bring 7+ years of hands-on experience building scalable and high-performance web applications. I specialize in modern frontend technologies including React, Angular (up to v16), JavaScript, and TypeScript.
+            </p>
+            <p>
+              Currently, I lead UI development at Ventera Corporation where I focus on API integration, AngularJS to React migrations, and building reusable, testable, and efficient components. I have a strong command over state management using Redux and Context API, and extensive experience with HTML, CSS, Tailwind, Bootstrap, and SASS.
+            </p>
+            <p>
+              Beyond frontend, I’ve contributed to full-stack applications using Node.js and Express, integrated REST APIs and GraphQL, and deployed microservices on AWS and Azure. I follow best practices using ESLint, Webpack, Vite, and testing frameworks such as Jest, Cypress, and Karma.
+            </p>
+            <p>
+              Passionate about delivering user-centric solutions and clean architecture, I thrive in collaborative environments and agile teams. My work spans domains including manufacturing, insurance, and fintech — always with a focus on reliability, maintainability, and scalability.
             </p>
           </div>
         </div>
         <div className="lg:pl-20">
           <ul role="list">
-            <SocialLink href="https://www.linkedin.com/in/tbhavishya/" icon={GitHubIcon} className="mt-4">
+            <SocialLink href="https://github.com/trbhavishya" icon={GitHubIcon} className="mt-4">
               Follow on GitHub
             </SocialLink>
-            <SocialLink href="https://github.com/trbhavishya" icon={LinkedInIcon} className="mt-4">
-              Follow on LinkedIn
+            <SocialLink href="https://www.linkedin.com/in/tbhavishya/" icon={LinkedInIcon} className="mt-4">
+              Connect on LinkedIn
             </SocialLink>
             <SocialLink
               href="mailto:trbhavishya@gmail.com"

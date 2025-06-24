@@ -236,7 +236,13 @@ export default async function Home() {
             Frontend Developer
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Hi I&apos;m Bhavishya. Experienced Frontend Developer with a strong background in the manufacturing industry, specializing in building and maintaining scalable, high-performance web applications. Experienced in developing internal support portals and client-facing web application tailored to the needs of multiple stakeholders. Skilled in JavaScript, React, Angular, Tailwind CSS, and Apollo GraphQL, with a focus on usability, clean architecture, and cross-functional collaboration.
+            Hi I&apos;m Bhavishya — a front-end developer with strong background in the
+            manufacturing industry, specializing in building and maintaining scalable,
+            high-performance web applications. Experienced in developing
+            internal support portals and client-facing web application tailored to the needs of
+            multiple stakeholders. Skilled in JavaScript, React, Angular, Tailwind CSS,
+            and Apollo GraphQL, with a focus on usability, clean architecture, and cross-functional
+            collaboration.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
