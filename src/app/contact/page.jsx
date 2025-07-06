@@ -34,12 +34,12 @@ export default function Contact() {
           <div>
             <div className="font-semibold text-zinc-800 dark:text-zinc-200">LinkedIn</div>
             <a
-              href="https://linkedin.com/in/tbhavishya"
+              href="https://linkedin.com/in/trbhavishya"
               target="_blank"
               rel="noopener noreferrer"
               className="text-teal-500 hover:underline"
             >
-              linkedin.com/in/tbhavishya
+              linkedin.com/in/trbhavishya
             </a>
           </div>
         </div>
