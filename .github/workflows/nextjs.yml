@@ -87,6 +87,20 @@ jobs:
           if [ -d ".next/output" ]; then ls -la .next/output; else echo ".next/output does not exist"; fi
           echo "--- .next/static ---"
           if [ -d ".next/static" ]; then ls -la .next/static; else echo ".next/static does not exist"; fi
+      - name: Prepare Pages artifact
+        run: |
+          echo "Preparing ./out for upload..."
+          mkdir -p out
+          # If Next exported to old ./out, keep it. Otherwise copy from .next/output
+          if [ -d ".next/output/static" ]; then
+            echo "Copying .next/output/static -> ./out"
+            cp -r .next/output/static/* out/ || true
+          fi
+          if [ -d ".next/output" ] && [ -z "$(ls -A out)" ]; then
+            echo "Copying .next/output -> ./out"
+            cp -r .next/output/* out/ || true
+          fi
+          echo "./out contents:"; ls -la out || true
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
