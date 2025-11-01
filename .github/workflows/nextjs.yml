@@ -75,6 +75,18 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
+      - name: Show output directories
+        run: |
+          echo "--- project root ---"
+          ls -la
+          echo "--- ./out ---"
+          if [ -d "./out" ]; then ls -la ./out; else echo "./out does not exist"; fi
+          echo "--- .next ---"
+          if [ -d ".next" ]; then ls -la .next; else echo ".next does not exist"; fi
+          echo "--- .next/output ---"
+          if [ -d ".next/output" ]; then ls -la .next/output; else echo ".next/output does not exist"; fi
+          echo "--- .next/static ---"
+          if [ -d ".next/static" ]; then ls -la .next/static; else echo ".next/static does not exist"; fi
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
